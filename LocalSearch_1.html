@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset = 'utf-8'>
+  <title>住所検索</title>
+  <link rel = "stylesheet" type = "text/css" href = "LocalSearch.css">
+</head>
+
+<body>
+  <form action = "LocalSearch_2.php" method = "get">都道府県市町村名、ランドマーク
+		<input type ="text" name = "address" size = "15">
+    <button type ="submit" name = "action" value = "send">検索</button>
+
+		<span class = "br">ジャンル（業種）</span>
+    <select name = "business" size = "1">
+      	<option value = "和食,0101">和食</option>
+      	<option value = "洋食,0102">洋食</option>
+      	<option value = "中華,0104">中華</option>
+	      <option value = "アジア料理,0105">アジア料理</option>
+	      <option value = "ラーメン,0106">ラーメン</option>
+	      <option value = "居酒屋,0110">居酒屋</option>
+	      <option value = "カフェ,0115">カフェ</option>
+	      <option value = "スイーツ,0118">スイーツ</option>
+	      <option value = "コンビニ,0205">コンビニ</option>
+    </select>
+
+		<span class = "br">距離（半径）</span>
+    <select name = "distance" size = "1">
+	      <option value = "0.1">0.1km</option>
+	      <option value = "0.3">0.3km</option>
+	      <option value = "0.5">0.5km</option>
+	      <option value = "0.7">0.7km</option>
+	      <option value = "1">1.0km</option>
+	      <option value = "1.5">1.5km</option>
+	      <option value = "2">2.0km</option>
+	      <option value = "2.5">2.5km</option>
+	      <option value = "3">3.0km</option>
+	      <option value = "4">4.0km</option>
+	      <option value = "5">5.0km</option>
+	      <option value = "6">6.0km</option>
+	      <option value = "7">7.0km</option>
+	      <option value = "8">8.0km</option>
+	      <option value = "9">9.0km</option>
+	      <option value = "10">10.0km</option>
+    </select>
+  </form>
+</body>
+<html>
